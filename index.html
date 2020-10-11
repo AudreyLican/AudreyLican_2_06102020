@@ -2,11 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="style-sheet1.css"/>
+        <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <title>
-        Réservia
-    </title>
+        <title> Réservia </title>
     </head> 
 </html>
 
@@ -27,25 +25,27 @@
             <p>Trouvez votre hébergement pour des vacnaces de rêve</p>
             <p>En plein centre ville ou en pleine nature</p>
             <!--zone de recherche ville -->
-            <form>
-                <div class="img_position">
-                    <p><i class="fas fa-map-marker-alt"></i></p>
-                </div>
-                <div class="champ_search">
-                    <p>
-                        <label for="ville-search">Ici :</label>
-                        <imput type="text" id="ville-search" placeholder="Ex : Marseille" size="30"/> 
-                    </p>                    
-                </div>                
-                <div class="bouton">
-                    <button>Recherche</button>
-                </div>
-            </form>
+            <div class="ville">
+                <form>
+                    <div class="img_position">
+                        <p><i class="fas fa-map-marker-alt"></i></p>
+                    </div>
+                    <div class="champ_search">
+                        <p>
+                            <label for="ville-search">Ici :</label>
+                            <input type="text" id="ville-search" placeholder="Ex : Marseille" size="30"/> 
+                        </p>                    
+                    </div>                
+                    <div class="bouton">
+                        <button>Recherche</button>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="filtre">
             <p>Filtres</p>
-            <div class="economique">
-                <div class="icon-bill">                  
+            <div class="filtrer">
+                <div class="icon-bill">     <!--éco-->          
                     <p>
                         <i class="fas fa-map"></i>
                     </p>
@@ -54,7 +54,7 @@
                     <p>Economique</p>
                 </div>                                
             </div>
-            <div class="familial">
+            <div class="filtrer"> <!--famille-->
                 <div class="icon-family">
                     <p>
                         
@@ -64,7 +64,7 @@
                     <p>Familial</p>
                 </div>
             </div>
-            <div class="romance">
+            <div class="filtrer"> <!--romance-->
                 <div class="icon-heart">
                     <p>
                         <i class="fas fa-heart"></i>
@@ -74,7 +74,7 @@
                     <p>Romantique</p>
                 </div>             
             </div>
-            <div class="Animaux">
+            <div class="filtrer"> <!--animaux-->
                 <div class="icon-dog">
                     <p>
                         <img src=""/>
@@ -87,8 +87,8 @@
         </div>
     </header>
     <!--Partie 1 Hébergements-->
-    <div class="conteneur">
-        <div class="hergement">
+    <div class="conteneur1">
+        <div class="hebergement">
             <p>Hébergements à Marseille</p>
             <div class="ligne1"> <!--haut-->
                 <div>
@@ -107,7 +107,6 @@
                     </p>
                 </div>
             </div>
-            <p> Afficher plus</p>
             <div class="ligne2"> <!--bas-->
                 <div>
                     <p>
@@ -125,8 +124,14 @@
                     </p>
                 </div>
             </div>
+            <div>
+                <p> Afficher plus</p>
+            </div>
         </div>
         <aside class="populaires">
+            <p>
+                Les plus populaires
+            </p>
             <div>
                 <p>
                     <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/>
@@ -140,8 +145,8 @@
             </div>
         </aside>
     </div>
-
-    <div class="conteneur">
+    <!--Activités-->
+    <div class="conteneur2">
         <!--gauche-->
         <div class="activites-g">
                 <p>
@@ -170,40 +175,20 @@
 
     <footer>
         <div class="a-propos">
-            <h3>
-                A propos
-            </h3>
-            <p>
-                Fonctionnement du site
-            </p>
-            <p>
-                Conditions générales de vente
-            </p>
-            <p>
-                Données et confidentionalité
-            </p>
+            <h2> A propos </h2>
+            <p> Fonctionnement du site </p>
+            <p> Conditions générales de vente </p>
+            <p> Données et confidentionalité </p>
         </div>
         <div class="nos-herg">
-            <h3>
-                Nos hébergements
-            </h3>
-            <p>
-                Charte qualité
-            </p>
-            <p>
-                Soumettre votre hotel
-            </p>
+            <h2> Nos hébergements </h2>
+            <p> Charte qualité </p>
+            <p> Soumettre votre hotel </p>
         </div>
         <div class="assitance">
-            <h3>
-                Assistance
-            </h3>
-            <p>
-                Centre d'aide
-            </p>
-            <p>
-                Nous contacter
-            </p>
+            <h2> Assistance </h2>
+            <p> Centre d'aide </p>
+            <p> Nous contacter </p>
         </div>
     </footer>
 
