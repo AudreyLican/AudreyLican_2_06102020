@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
+        <meta name="viewport"/>
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <title> Réservia </title>
@@ -21,26 +22,26 @@
                 </ul>
             </nav>
         </div>
-        <div class="recherche">
-            <p>Trouvez votre hébergement pour des vacnaces de rêve</p>
-            <p>En plein centre ville ou en pleine nature</p>
-            <!--zone de recherche ville -->
-            <div class="ville">
-                <form>
-                    <div class="img_position">
-                        <p><i class="fas fa-map-marker-alt"></i></p>
-                    </div>
-                    <div class="champ_search">
-                        <p>
-                            <label for="ville-search">Ici :</label>
-                            <input type="text" id="ville-search" placeholder="Ex : Marseille" size="30"/> 
-                        </p>                    
-                    </div>                
-                    <div class="bouton">
-                        <button>Recherche</button>
-                    </div>
-                </form>
-            </div>
+    </header>
+    <!--CONTENEUR 1-->
+    <div class="conteneur 1">
+        <p>Trouvez votre hébergement pour des vacnaces de rêve</p>
+        <p>En plein centre ville ou en pleine nature</p>
+        <!--zone de recherche ville -->
+        <div class="ville">
+            <form class="search">
+                <div class="img_position">
+                    <p><i class="fas fa-map-marker-alt"></i></p>
+                </div>
+                <div class="champ_search">
+                    <p>
+                        <input type="text" id="ville-search" placeholder="Ex : Marseille" size="30"/> 
+                    </p>                    
+                </div>                
+                <div class="bouton">
+                    <button>Recherche</button>
+                </div>
+            </form>
         </div>
         <div class="filtre">
             <p>Filtres</p>
@@ -66,9 +67,7 @@
             </div>
             <div class="filtrer"> <!--romance-->
                 <div class="icon-heart">
-                    <p>
-                        <i class="fas fa-heart"></i>
-                    </p>
+                    <p> <i class="fas fa-heart"></i> </p>
                 </div>
                 <div>
                     <p>Romantique</p>
@@ -76,20 +75,18 @@
             </div>
             <div class="filtrer"> <!--animaux-->
                 <div class="icon-dog">
-                    <p>
-                        <img src=""/>
-                    </p>
+                    <p> <i class="fas fa-dog"></i> </p>
                 </div>
                 <div>
                     <p>Animaux autorisé<source></p>
                 </div>
             </div>
         </div>
-    </header>
-    <!--Partie 1 Hébergements-->
-    <div class="conteneur1">
+    </div>
+    <!--CONTENEUR 2 : HEBREGEMENTS-->
+    <div class="conteneur2">
         <div class="hebergement">
-            <p>Hébergements à Marseille</p>
+            <h2>Hébergements à Marseille</h2>
             <div class="ligne1"> <!--haut-->
                 <div>
                     <p>
@@ -129,9 +126,7 @@
             </div>
         </div>
         <aside class="populaires">
-            <p>
-                Les plus populaires
-            </p>
+            <h2> Les plus populaires </h2>
             <div>
                 <p>
                     <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/>
@@ -145,48 +140,56 @@
             </div>
         </aside>
     </div>
-    <!--Activités-->
-    <div class="conteneur2">
-        <!--gauche-->
-        <div class="activites-g">
+    <!--CONTENEUR 3 : ACTIVITES-->
+    <div class="conteneur3">
+        <h2> Activités à Marseille</h2>
+        <div class="images-activites">
+                <!--gauche-->
+            <div class="activites-g">
                 <p>
-                    <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/>
+                    <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="img-head"/>
                 </p>
-                <p>
-                    <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/>
-                </p>
-                <p> 
-                    <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"/>
-                </p>
+                <div class="activites-g-g">
+                    <p>
+                        <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/>
+                    </p>
+                    <p> 
+                        <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"/>
+                    </p>
+                </div>
+                
             </div>
             <!--droite-->
-        <div class="activites-d">
-            <p>
-                <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"/>
-            </p>
-            <p>
-                <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"/>
-            </p>
-            <p>
-                <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/>
-            </p>
-        </div>
+            <div class="activites-d">
+                <p>
+                    <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="img-head"/> 
+                </p>
+                <div>
+                    <p class="activites-d-d">
+                        <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"/>
+                    </p>
+                    <p>
+                        <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/>
+                    </p>
+                </div> 
+            </div>
+        </div>  
     </div>
 
     <footer>
         <div class="a-propos">
-            <h2> A propos </h2>
+            <h3> A propos </h3>
             <p> Fonctionnement du site </p>
             <p> Conditions générales de vente </p>
             <p> Données et confidentionalité </p>
         </div>
         <div class="nos-herg">
-            <h2> Nos hébergements </h2>
+            <h3> Nos hébergements </h3>
             <p> Charte qualité </p>
             <p> Soumettre votre hotel </p>
         </div>
         <div class="assitance">
-            <h2> Assistance </h2>
+            <h3> Assistance </h3>
             <p> Centre d'aide </p>
             <p> Nous contacter </p>
         </div>
