@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
-        <meta name="viewport"/>
+        <meta name="description" content="Trouvez votre hébergement pour des vacances de rêve"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <title> Réservia </title>
@@ -13,30 +14,28 @@
     <!--En-tête-->
     <header>
         <div class="en-tete">
-            <p class="logo">Réservia</p>
-            <nav>
+            <h1 class="logo"> Réservia </h1>
+            <nav class="menu">
                 <ul>
-                    <li>Hébergements</li>
-                    <li>Activités</li>
+                    <li> <a href="#hebergement"> Hébergements </a></li>
+                    <li> <a href="#activites"> Activités </a></li>
                     <li>S'inscrire</li>
                 </ul>
             </nav>
         </div>
     </header>
     <!--CONTENEUR 1-->
-    <div class="conteneur 1">
-        <p>Trouvez votre hébergement pour des vacnaces de rêve</p>
+    <div class="conteneur1">
+        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
         <p>En plein centre ville ou en pleine nature</p>
         <!--zone de recherche ville -->
         <div class="ville">
             <form class="search">
                 <div class="img_position">
-                    <p><i class="fas fa-map-marker-alt"></i></p>
+                    <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <div class="champ_search">
-                    <p>
-                        <input type="text" id="ville-search" placeholder="Ex : Marseille" size="30"/> 
-                    </p>                    
+                    <input type="text" id="ville-search" placeholder="Ex : Marseille" size="30"/>                    
                 </div>                
                 <div class="bouton">
                     <button>Recherche</button>
@@ -46,7 +45,7 @@
         <div class="filtre">
             <p>Filtres</p>
             <div class="filtrer">
-                <div class="icon-bill">     <!--éco-->          
+                <div class="icon">     <!--éco-->          
                     <p>
                         <i class="fas fa-map"></i>
                     </p>
@@ -56,7 +55,7 @@
                 </div>                                
             </div>
             <div class="filtrer"> <!--famille-->
-                <div class="icon-family">
+                <div class="icon">
                     <p>
                         
                     </p>
@@ -66,7 +65,7 @@
                 </div>
             </div>
             <div class="filtrer"> <!--romance-->
-                <div class="icon-heart">
+                <div class="icon">
                     <p> <i class="fas fa-heart"></i> </p>
                 </div>
                 <div>
@@ -74,11 +73,11 @@
                 </div>             
             </div>
             <div class="filtrer"> <!--animaux-->
-                <div class="icon-dog">
+                <div class="icon">
                     <p> <i class="fas fa-dog"></i> </p>
                 </div>
                 <div>
-                    <p>Animaux autorisé<source></p>
+                    <p>Animaux autorisés<source></p>
                 </div>
             </div>
         </div>
@@ -86,8 +85,9 @@
     <!--CONTENEUR 2 : HEBREGEMENTS-->
     <div class="conteneur2">
         <div class="hebergement">
-            <h2>Hébergements à Marseille</h2>
+            <h3 id="hebergement">Hébergements à Marseille</h3>
             <div class="ligne1"> <!--haut-->
+                
                 <div>
                     <p>
                         <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/>
@@ -122,11 +122,11 @@
                 </div>
             </div>
             <div>
-                <p> Afficher plus</p>
+                <a href="#">
             </div>
         </div>
         <aside class="populaires">
-            <h2> Les plus populaires </h2>
+            <h3> Les plus populaires </h3>
             <div>
                 <p>
                     <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/>
@@ -142,7 +142,7 @@
     </div>
     <!--CONTENEUR 3 : ACTIVITES-->
     <div class="conteneur3">
-        <h2> Activités à Marseille</h2>
+        <h3 id="activites"> Activités à Marseille</h3>
         <div class="images-activites">
                 <!--gauche-->
             <div class="activites-g">
@@ -178,18 +178,18 @@
 
     <footer>
         <div class="a-propos">
-            <h3> A propos </h3>
+            <h4> A propos </h4>
             <p> Fonctionnement du site </p>
             <p> Conditions générales de vente </p>
             <p> Données et confidentionalité </p>
         </div>
         <div class="nos-herg">
-            <h3> Nos hébergements </h3>
+            <h4> Nos hébergements </h4>
             <p> Charte qualité </p>
             <p> Soumettre votre hotel </p>
         </div>
         <div class="assitance">
-            <h3> Assistance </h3>
+            <h4> Assistance </h4>
             <p> Centre d'aide </p>
             <p> Nous contacter </p>
         </div>
